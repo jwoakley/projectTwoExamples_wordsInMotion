@@ -1,0 +1,90 @@
+body {
+    background-color: #f5f5dc;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
+}
+* {
+    font-family: paralucent, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: none;
+}
+
+#first-phrase{
+    text-align: center;
+    font-size: 6em;
+    margin-top: 15%;
+    letter-spacing: 1mm;
+}
+#TOGETHER {
+    font-size: 6em;
+    margin-left: 34%;
+    margin-top: -7%;
+}
+
+#T-1, #O, #G, #E-1, #T-2, #H, #E-2, #R {
+    float: left;
+    padding: 5px;
+    position: relative;
+    top: 100px;
+    
+}
+
+#TOGETHER:hover #T-1 {
+    transform: translate(100px, 200px);
+    transition: all 1s ease-in; 
+    color: #2B74A4;
+}
+
+
+#TOGETHER:hover #O {
+    transform: translate(300px, 100px);
+    transition: all 1s ease-in; 
+    color: #2B74A4;
+}
+
+#TOGETHER:hover #G {
+    transform: translate(100px, 400px);
+    transition: all 1s ease-in; 
+    color: #2B74A4;
+}
+
+#TOGETHER:hover #E-1 {
+    transform: translate(100px, 50px);
+    transition: all 1s ease-in; 
+    color: #2B74A4;
+}
+
+#TOGETHER:hover #T-2 {
+    transform: translate(-100px, 20px);
+    transition: all 1s ease-in; 
+    color: #2B74A4;
+}
+
+
+#TOGETHER:hover #H {
+    transform: translate(200px, -250px);
+    transition: all 1s linear; 
+    color: #2B74A4;
+}
+
+#TOGETHER:hover #E-2 {
+     transform: translate(-300px, -250px);
+    transition: all 1s ease-in; 
+    color: #2B74A4;
+}
+
+#TOGETHER:hover #R {
+    transform: translate(50px, 150px);
+    transition: all 1s ease-in;
+    color: #2B74A4;
+}
+#next-page{
+    font-size: 2.5em;
+    margin-top: -10%;
+    margin-left: 50%;
+}
+#next-page a {
+    color: #2B74A4;
+}

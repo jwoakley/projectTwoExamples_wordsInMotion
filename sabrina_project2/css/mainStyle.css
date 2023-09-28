@@ -1,0 +1,34 @@
+* {
+    background-color: #f5f5dc;
+    box-sizing: border-box;
+    font-family: paralucent, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 200px;
+}
+ h1 {
+     text-align: center;
+     font-size: 6em;
+ }
+a {
+    color: #2B74A4;
+}
+.typewriter h1 {
+    overflow: hidden; 
+    border-right: .15em solid#C78596; 
+    white-space: nowrap;
+    margin: auto;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 70% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #C78596; }
+  }

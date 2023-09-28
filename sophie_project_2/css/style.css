@@ -1,0 +1,213 @@
+* {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 0;
+    max-height: 100vh;
+    box-sizing: border-box;
+    background-color: lightblue
+  }
+
+  section {
+    float: left;
+}
+  
+  html {
+    height: 100%;
+    font-family: futura-pt, sans-serif;
+    font-size: 200px;
+  } 
+  
+  body {
+    width: 100%; 
+    min-height: 100%;
+    color: white;
+    text-align: center;
+    animation-iteration-count: infinite;
+    align-items: center;
+  }
+
+  #container {
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction:row;
+    width: max-content
+}
+/* title */
+
+#title-a {
+  font-size: 80px;
+  color: lemonchiffon;
+  line-height: 80px;
+  font-style: italic;
+  animation-name: titleaAnimate;
+  animation-duration: 5s;
+  animation-delay: 1s; 
+  animation-iteration-count: infinite;
+}
+
+#title-b {
+  font-size: 50px;
+  line-height: 80px;
+  font-family: 'NicksFontRegular'; 
+  font-weight: normal; 
+  font-style: normal;  
+  animation-name: titlebAnimate;
+  animation-duration: 5s;
+  animation-delay: 1s; 
+  animation-iteration-count: infinite;
+}   
+
+
+/* line 1 */ 
+#line-1 { 
+font-size: 80px;
+line-height: 90px;
+width: 408px;
+margin-bottom: 150px;
+padding: 400px 0px 300px 0px;
+} 
+
+#glow {
+animation-name: glowAnimate;
+animation-duration: 5s;
+animation-delay: .25s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+}
+
+#scar {
+  font-family: 'NicksFontRegular'; 
+  text-align: center;
+}
+
+#screen:hover {
+  color: lemonchiffon;
+  display: inline-block;
+  animation-name: screenAnimate;
+  animation-duration: 5s; 
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite; 
+}
+
+/* line 2 */ 
+#line-2 {
+  font-size: 80px;
+  line-height: 80px;
+  padding-left: 30px;
+}
+
+#origin {
+  font-family: 'NicksFontRegular'; 
+}
+
+#origin:hover {
+transform: scale(.02);
+transition: transform 1s linear;
+}
+
+#white {
+  font-size: 400px;
+} 
+
+/* line 3 */
+
+#red a {
+  color: white;
+  text-decoration: none;
+  font-size: 400px;
+} 
+
+#red a:hover {
+  color: crimson;
+  text-decoration: none;
+  font-size: 400px;
+} 
+
+#line-3 {
+  font-size: 80px;
+  line-height: 80px;
+  padding-left: 30px;
+} 
+
+#dove {
+  font-family: 'NicksFontRegular'; 
+}
+
+#dove2:hover {
+  animation-name: doveAnimate;
+  animation-duration: 3s; 
+  animation-iteration-count: infinite;
+  transition: ease-in; 
+}
+
+/* line 4 */ 
+
+#line-4 {
+  font-size: 80px;
+  line-height: 80px;
+  padding-left: 30px;
+}
+ 
+
+/* ------- keyframes ----------- */ 
+
+@keyframes screenAnimate { 
+  from {
+    transform: scale(1,1);
+  }
+  to{
+    transform: scale(1,2);
+  } 
+} 
+
+@keyframes glowAnimate { 
+  from {
+    opacity: 100%;
+    color: lemonchiffon
+  }
+  to{
+    text-shadow:lemonchiffon;
+    opacity: 80%;
+  } 
+}
+
+  @keyframes titleaAnimate { 
+    100% {
+      opacity: 100%;
+    }
+    75% {
+      opacity: 50%;
+    }
+    50% {
+      opacity: 0%;
+    }
+  
+  } 
+
+  @keyframes titlebAnimate { 
+    100% {
+      opacity: 100%;
+      color: white
+    }
+    75% {
+      opacity: 50%;
+    }
+    50% {
+      opacity: 0%;
+    }
+  
+  }
+
+  @keyframes doveAnimate { 
+    50% {
+      transform: translate(-100px,-300px);
+    }
+    75% {
+      transform: translate(-50px,-500px);
+    }
+    100% {
+      transform: translate(-75px,-700px);
+    }
+  
+  }

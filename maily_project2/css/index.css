@@ -1,0 +1,133 @@
+html {
+  width: 1280px;
+  height: 720px;
+  box-sizing: border-box;
+  background-attachment: fixed;
+  animation-name: beginningAnimate;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+body {
+  width: 100%;
+  text-align: left;
+  padding: 5%;
+  margin-left: 3%;
+  color: white;
+  font-size: 18px;
+  font-family: argent-cf, serif;
+  font-weight: 300;
+  font-style: normal;
+  position: fixed;
+}
+
+a {
+  color: rgb(248, 241, 219);
+  text-decoration: none;
+}
+
+#com {
+  position: fixed;
+  top: 6%;
+  left: 31%;
+  font-family: manteiga-gorda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 75%;
+  color: white;
+  animation-name: glowAnimate;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite alternate;
+}
+
+#unity {
+  position: fixed;
+  top: 32%;
+  left: 55%;
+  font-family: manteiga-gorda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 85%;
+}
+
+.stanza1 {
+  position: fixed;
+}
+
+#line1 {
+  opacity: 0%;
+  font-size: 20px;
+  animation-name: line1Animate;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+}
+
+#line2 {
+  opacity: 0%;
+  font-size: 20px;
+  animation-name: line1Animate;
+  animation-duration: 1.5s;
+  animation-delay: 7.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+#line3 {
+  opacity: 0%;
+  animation-name: line1Animate;
+  animation-duration: 1.5s;
+  animation-delay: 10s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+#line4 {
+  opacity: 0%;
+  animation-name: line1Animate;
+  animation-duration: 1.5s;
+  animation-delay: 12s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+#line2:hover a {
+  letter-spacing: 2px;
+  transition-duration: 2s;
+  transform: scale(2px);
+}
+
+/* ANIMATION */
+
+@keyframes beginningAnimate {
+  0% {
+    background-image: linear-gradient(rgb(232, 240, 247, 0), rgba(129, 180, 238, 0.0), rgb(255, 206, 133, 0), rgb(255, 192, 203, 0));
+  }
+  25% {
+    background-image: linear-gradient(rgb(232, 240, 247, 0.25), rgba(129, 180, 238, 0.25), rgb(255, 206, 133, 0.25), rgb(255, 192, 203, 0.25));
+  }
+  50% {
+    background-image: linear-gradient(rgb(232, 240, 247, 0.50), rgba(129, 180, 238, 0.50), rgb(255, 206, 133, 0.5), rgb(255, 192, 203, 0.5));
+  }
+  75% {
+    background-image: linear-gradient(rgb(232, 240, 247, 0.75), rgba(129, 180, 238, 0.75), rgb(255, 206, 133, 0.75), rgb(255, 192, 203, 0.75));
+  }
+  100% {
+    background-image: linear-gradient(rgb(142, 198, 250), rgba(129, 180, 238, 0.836), rgb(255, 206, 133), rgb(255, 192, 203));
+  }
+}
+
+@keyframes line1Animate {
+  from {
+    opacity: 0%;
+    color: white;
+  }
+  to {
+    color: white;
+    opacity: 100%;
+    font-size: 40px;
+  }
+}

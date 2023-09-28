@@ -1,0 +1,227 @@
+html {
+  width: 1280px;
+  height: 720px;
+  background-image: linear-gradient(rgba(34, 36, 126, 0.8), rgba(33, 38, 112, 0.9), rgba(62, 64, 206, 0.9), rgba(175, 89, 19, 0.8), rgba(192, 137, 18, 0.6));
+  box-sizing: border-box;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: left;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  padding: 5%;
+  margin-left: 3%;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-family: argent-cf, serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+a {
+  color: rgb(248, 241, 219);
+  text-decoration: none;
+}
+
+#line1 {
+  position: fixed;
+  text-align: left;
+  opacity: 0%;
+  font-size: 20px;
+  -webkit-animation-name: line1Animate;
+  animation-name: line1Animate;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+#line2 {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  text-align: left;
+  font-size: 20px;
+  width: 100%;
+  opacity: 0%;
+  -webkit-animation-name: line2Animate;
+  animation-name: line2Animate;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+#purpose {
+  position: fixed;
+  bottom: 56%;
+  left: 50%;
+  font-family: manteiga-gorda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 75%;
+}
+
+#line3 {
+  position: fixed;
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+  opacity: 0%;
+  -webkit-animation-name: line3Animate;
+  animation-name: line3Animate;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+#line4 {
+  position: fixed;
+  text-align: left;
+  opacity: 0%;
+  -webkit-animation-name: line4Animate;
+  animation-name: line4Animate;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+#line4:hover {
+  letter-spacing: 5px;
+  transition-duration: 2s;
+  transform: scale(2px);
+  color: navy;
+}
+
+/* ANIMATION */
+
+@keyframes line1Animate {
+  0% {
+    bottom: 0%;
+    font-size: 5px;
+    opacity: 10%;
+  }
+  25% {
+    bottom: 10%;
+    font-size: 10px;
+    opacity: 20%;
+  }
+  50% {
+    bottom: 30%;
+    font-size: 20px;
+    opacity: 30%;
+  }
+  75% {
+    bottom: 50%;
+    font-size: 30px;
+    opacity: 60%;
+  }
+  100% {
+    bottom: 70%;
+    font-size: 40px;
+    opacity: 100%;
+  }
+}
+
+@keyframes line2Animate {
+  0% {
+    bottom: 0%;
+    font-size: 5px;
+    opacity: 10%;
+  }
+  25% {
+    bottom: 10%;
+    font-size: 10px;
+    opacity: 20%;
+  }
+  50% {
+    bottom: 30%;
+    font-size: 20px;
+    opacity: 30%;
+  }
+  75% {
+    bottom: 50%;
+    font-size: 30px;
+    opacity: 60%;
+  }
+  100% {
+    bottom: 60%;
+    font-size: 40px;
+    opacity: 100%;
+  }
+}
+
+@keyframes line3Animate {
+  0% {
+    bottom: 0%;
+    font-size: 5px;
+    opacity: 10%;
+  }
+  25% {
+    bottom: 10%;
+    font-size: 10px;
+    opacity: 20%;
+  }
+  50% {
+    bottom: 30%;
+    font-size: 20px;
+    opacity: 30%;
+  }
+  75% {
+    bottom: 40%;
+    font-size: 30px;
+    opacity: 60%;
+  }
+  100% {
+    bottom: 50%;
+    font-size: 40px;
+    opacity: 100%;
+  }
+}
+
+@keyframes line4Animate {
+  0% {
+    bottom: 0%;
+    font-size: 5px;
+    opacity: 10%;
+  }
+  25% {
+    bottom: 10%;
+    font-size: 10px;
+    opacity: 20%;
+  }
+  50% {
+    bottom: 20%;
+    font-size: 20px;
+    opacity: 30%;
+  }
+  75% {
+    bottom: 30%;
+    font-size: 30px;
+    opacity: 60%;
+  }
+  100% {
+    bottom: 35%;
+    font-size: 50px;
+    opacity: 100%;
+  }
+}

@@ -1,0 +1,177 @@
+
+* {
+    
+    font-family: 'Old Standard TT', serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    font-size: 14px;
+    
+}
+
+a:hover {
+    color: black;
+	}
+a  {
+    color: #B50000;
+}
+
+.red_hover:hover {
+    color: black;
+    cursor: crosshair;
+}
+.red {
+    color: #B50000;
+}
+.red_hover {
+    color: #B50000;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+    background-color:white;
+    cursor: cell;
+    animation: btw; 
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+
+}  
+.livearea {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: absolute;
+    top: 475px;
+    left: 76px;
+    width:  510px;
+    height: 390px;
+    background-color: white;
+    animation: btw; 
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+   
+}
+@keyframes btw {
+    from {background-color: black;}
+    to{ background-color: white;}
+}
+.linetwelve {
+    position: fixed;
+    top: 453px;
+    left: 308px;
+    animation: blink;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+   
+}
+.lineeleven {
+    position: fixed;
+    top: 669px;
+    left: 327px;
+    
+}
+
+.lineten {
+    position: fixed;
+    top: 570px;
+    left: 449px; 
+}
+.linenine {
+    position: fixed;
+    top: 820px;
+    left: 75px;   
+}
+
+.lineeight {
+    position: fixed;
+    top: 487px;
+    left: 370px; 
+}
+
+
+
+
+@keyframes blink{
+0%{opacity: 0;}
+100%{color: 1;}
+        
+}
+
+.linesix {
+    position: fixed;
+    top: 745px;
+    left: 255px;    
+}
+
+.linefive {
+    position: fixed;
+    top: 560px;
+    left: 207px;
+}
+
+.linefour {
+    position: fixed;
+    top: 560px;
+    left: 112px;
+  
+}
+
+.linethree {
+    position: fixed;
+    top: 560px;
+    left: 75px ;
+   
+}
+
+.linetwo {
+    position: fixed;
+    top: 706px;
+    left: 194px;
+}
+
+
+.lineone {
+    position: fixed;
+    top: 520px;
+    left: 370px;
+    
+}
+
+
+.blink {
+    color: #B50000;
+    animation: blink;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    color: #B50000;
+}
+.backdoor {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    position: fixed;
+    left: 98%;
+    top: 96%;
+    font-size: 10px;
+    color: #B50000;
+}
+.backdoor a:hover {
+    color: black;
+    cursor: crosshair;
+}

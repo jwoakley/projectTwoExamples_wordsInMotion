@@ -1,0 +1,122 @@
+
+* {
+     font-family: 'Old Standard TT', serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+
+a:hover {
+    color: black;
+    cursor: crosshair;
+	}
+a  {
+    color: #B50000;
+}
+
+.red {
+    color: #B50000;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+    background-color:white;
+    cursor: cell;
+}  
+.livearea {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: absolute;
+    top: 475px;
+    left: 76px;
+    width:  510px;
+    height: 390px;
+    background-color: white; 
+}
+
+@keyframes blink{
+0%{opacity: 0;}
+100%{color: 1;}
+        
+}
+.typewriter{
+    overflow: hidden; 
+    white-space: nowrap; 
+    color: black;
+    letter-spacing:none; 
+    animation: 
+    typing 4s steps(40, end) 2;   
+}
+.typewriter:hover {
+    color: #B50000; 
+    cursor: crosshair;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+.linesix {
+    position: fixed;
+    top: 745px;
+    left: 255px;    
+   
+}
+
+.linefive {
+    position: fixed;
+    top: 560px;
+    left: 207px;
+}
+
+.linefour {
+    position: fixed;
+    top: 560px;
+    left: 112px;
+  
+}
+
+.linethree {
+    position: fixed;
+    top: 560px;
+    left: 75px ;
+   
+}
+
+.linetwo {
+    position: fixed;
+    top: 706px;
+    left: 194px;
+}
+
+
+.lineone {
+    position: fixed;
+    top: 520px;
+    left: 308px;
+    
+}
+
+.backdoor {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    position: fixed;
+    left: 98%;
+    top: 96%;
+    font-size: 10px;
+    color: #B50000;
+}
+.backdoor a:hover {
+    color: black;
+    cursor: crosshair;
+}

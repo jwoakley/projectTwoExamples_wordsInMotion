@@ -1,0 +1,75 @@
+* {
+    font-family: 'Old Standard TT', serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    font-size: 14px
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+    background-color:white;
+    cursor: cell;
+}  
+.livearea {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: absolute;
+    top: 475px;
+    left: 76px;
+    width:  510px;
+    height: 390px; 
+    background-color: white; 
+}
+.lineone_two {
+    position: fixed;
+    top: 520px;
+    left: 369px;
+}
+.lineone {
+     position: fixed;
+    top: 520px;
+    left: 308px;
+}
+.red{
+    color: #B50000;
+    animation: blink 1s linear infinite;
+    
+	}
+.red:hover {
+    color: black;
+    cursor: crosshair;
+}
+@keyframes blink{
+0%{opacity: 0;}
+100%{opacity: 1;}
+}
+
+.backdoor {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    position: fixed;
+    left: 98%;
+    top: 96%;
+    font-size: 10px;
+    
+}
+a {
+    color: #B50000;
+}
+.backdoor {
+    font-size: 10px;
+}
+.backdoor a:hover {
+    color: black;
+    cursor: crosshair;
+}

@@ -1,0 +1,25 @@
+* {
+    background-color: #2b74a4;
+    margin-top: 10%;
+}
+
+h1 {
+    font-size: 6.5em;
+    text-align: center;
+    font-family: paralucent, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: none;
+    color:#f5f5dc;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #c7ce3b, 0 0 40px #c7ce3b, 0 0 50px #c7ce3b, 0 0 60px #c7ce3b, 0 0 70px #c7ce3b;
+  }
+  
+  to {
+    text-shadow: 0 0 15px #fff, 0 0 25px #c7ce3b, 0 0 35px #c7ce3b, 0 0 45px ##c7ce3b, 0 0 55px ##c7ce3b, 0 0 65px #c7ce3b, 0 0 75px #c7ce3b;
+  }
+}
